@@ -70,3 +70,16 @@ button{
 button:hover{
   background-color: #12334a;
 }
+
+.filter{
+  width: 100px;
+  border: 1px solid gray;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+.filter:hover{
+  background-color: black;
+  color: white;
+}
