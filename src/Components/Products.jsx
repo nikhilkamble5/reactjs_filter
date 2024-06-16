@@ -232,19 +232,19 @@ const Products = () => {
 
   return (
     
-    <div className="container">
+    <div className="cart">
       {
         data.map((product)=>{
           return(
-            <div className="cart" key={product.id}>
-              <div>
+            <div className="product" key={product.id}>
+              <div className="product-image">
                 <img src={product.thumbnail} alt="" style={{width:"50%"}}/>
                 </div> 
-                <div>
-                  <p>{product.title}</p>
-                  <p>{product.price}</p>
+                <div className="product-details">
+                  <p className="product-title">{product.title}</p>
+                  <p className="product-price">{product.price}</p>
                 </div>
-
+                  <button>Add</button>
             </div>
           )
         })
